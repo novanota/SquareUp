@@ -1,0 +1,22 @@
+.header {
+    &__logo img {
+        @media (max-width: $laptop-size) {
+            max-width: 118px;
+            max-height: 40px;
+        }
+    }
+}
+    
+.footer {
+    &__logo img {
+        @media (max-width: $laptop-size) {
+            max-width: 118px;
+            max-height: 40px;
+        }
+
+        @media (max-width: 1052.98px) {
+            max-width: 148px;
+            max-height: 50px;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.none {
+    display: none !important;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.no-scroll {
+    overflow-y: hidden;
+}
+
+.btn {
+    color: $grey-dark2;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0;
+    border-radius: 8px;
+    background: $green-primary;
+    transition: all .3s ease;
+
+    &:hover {
+        background: #9dff00c5;
+    }
+}
+
+.mobile-none {
+    @media (max-width: $mobile-size) {
+        display: none !important;
+    }
+}

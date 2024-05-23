@@ -1,0 +1,201 @@
+.faq {
+    &__inner {
+        border: 1px solid $grey-dark2;
+    }
+
+    &__heading {
+        padding: 120px 15px;
+        text-align: center;
+        background: url(../img/home/home-clients/clients-bg.png) no-repeat;
+        background-size: cover;
+        border: 1px solid $grey-dark2;
+
+        @media (max-width: $laptop-size) {
+            padding: clamp(3.125rem, 1.918rem + 4.95vw, 6.25rem) 15px;
+        }
+    }
+
+    &__title {
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 58px;
+        letter-spacing: 0%;
+        margin-bottom: 14px;
+
+        @media (max-width: $laptop-size) {
+            font-size: clamp(1.75rem, 1.509rem + 0.99vw, 2.375rem);
+            margin-bottom: clamp(0.375rem, 0.278rem + 0.4vw, 0.625rem);
+            line-height: clamp(2.25rem, 2.009rem + 0.99vw, 2.875rem);
+        }
+    }
+
+    &__subtitle {
+        max-width: 800px;
+        margin: 0 auto;
+        color: $grey-light3;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: -0.108px;
+
+        @media (max-width: $laptop-size) {
+            font-size: clamp(0.875rem, 0.827rem + 0.2vw, 1rem);
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+
+        @media (max-width: 1199.98px) {
+            flex-direction: column;
+        }
+    }
+
+    &__column {
+        flex: 1;
+        min-width: calc(50% - 10px);
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        border: 1px solid $grey-dark2;
+        padding: 30px 50px;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background: #262626d3;
+        }
+
+        &.open {
+            &:hover {
+                background: none;
+            }
+        }
+
+        @media (max-width: $laptop-size) {
+            padding: 24px 40px;
+        }
+
+        @media (max-width: 601.98px) {
+            padding: 30px 24px;
+        }
+
+        &-top {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        &-number {
+            padding: 20px;
+            border-radius: 12px;
+            background: linear-gradient(
+                180deg,
+                rgb(36, 36, 36),
+                rgba(36, 36, 36, 0) 100%
+            );
+            color: $color-white;
+            font-size: 28px;
+            font-weight: 600;
+            line-height: 150%;
+            letter-spacing: 0px;
+            margin-right: 30px;
+
+            @media (max-width: $laptop-size) {
+                padding: 16px;
+                font-size: 24px;
+                margin-right: 24px;
+            }
+
+            @media (max-width: 389.98px) {
+                font-size: 20px;
+                margin-right: 20px;
+                padding: 14px;
+            }
+        }
+
+        &-title {
+            color: $color-white;
+            font-size: 20px;
+            font-weight: 600;
+            max-width: 525px;
+            margin-right: 10px;
+
+            @media (max-width: 1451.98px) {
+                max-width: 412px;
+                font-size: 18px;
+            }
+
+            @media (max-width: 601.98px) {
+                max-width: 300px;
+            }
+
+            @media (max-width: 389.98px) {
+                font-size: 16px;
+            }
+        }
+
+        &-btns {
+            max-width: fit-content;
+            display: flex;
+            flex: 0 0 100%;
+            margin-left: auto;
+        }
+
+        &-open img {
+            width: 34px;
+            height: 34px;
+
+            @media (max-width: $laptop-size) {
+                width: 26px;
+                height: 26px;
+            }
+        }
+
+        &-bottom {
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            transition: max-height 0.3s ease, opacity 0.3s ease;
+            background: #242424;
+            border-radius: 12px;
+            margin-top: 10px;
+            padding: 0 20px;
+        }
+
+        &-subtitle {
+            font-size: 16px;
+            line-height: 24px;
+            color: $grey-light3;
+        }
+
+        &-close {
+            display: none;
+        }
+
+        &.open {
+            .faq__item-number {
+                color: $green-primary;
+            }
+
+            .faq__item-title {
+                color: $green-primary;
+            }
+
+            .faq__item-bottom {
+                max-height: 1000px; 
+                opacity: 1;
+                padding: 20px; 
+            }
+
+            .faq__item-open {
+                display: none;
+            }
+
+            .faq__item-close {
+                display: block;
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+/* Base */
+@import "./base/reset";
+@import "./base/vars";
+@import "./base/base";
+@import "./base/utils";
+@import "./base/containers";
+@import "./base/sticky-footer";
+
+/* Blocks */
+@import "./blocks/*.scss";
+
+/* General */
+@import "./blocks/general/about-ideas";
+@import "./blocks/general/interest";
+@import "./blocks/general/ideas";
+@import "./blocks/general/faq";
+@import "./blocks/general/contacts";
+@import "./blocks/general/connected";
+
+/* Home Page */
+@import "./blocks/home-styles/home";
+@import "./blocks/home-styles/companies";
+@import "./blocks/home-styles/services";
+@import "./blocks/home-styles/promotion";
+@import "./blocks/home-styles/clients";
+
+/* Services Page */
+@import "./blocks/services-styles/service";
+
+/* Work Page */
+@import "./blocks/work-styles/work";
+@import "./blocks/work-styles/works";
+
+/* Process Page */
+@import "./blocks/process-styles/process";
+@import "./blocks/process-styles/processes";
+
+/* About Page */
+@import "./blocks/about-styles/about-us";
+@import "./blocks/about-styles/about-squareup";
+@import "./blocks/about-styles/about-story";
+
+/* Careers Page */
+@import "./blocks/careers-styles/careers-home";
+@import "./blocks/careers-styles/careers-welcome";
+@import "./blocks/careers-styles/careers-openings";
+
+/* Careers Page */
+@import "./blocks/contact-styles/contact-home";

@@ -1,0 +1,80 @@
+.about-squareup {
+    &__inner {
+        padding: 100px 150px;
+        // max-width: 1300px;
+        border: 1px solid $grey-dark2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+
+        @media (max-width: $laptop-size) {
+            // max-width: 1080px;
+            gap: clamp(1.875rem, -2.222rem + 9.68vw, 6.25rem);
+            padding: clamp(2.5rem, 1.535rem + 3.96vw, 5rem) clamp(1rem, -1.027rem + 8.32vw, 6.25rem);
+        }
+
+        @media (max-width: 955.98px) {
+            align-items: start;
+            flex-direction: column;
+            max-width: 100%;
+            border: none;
+        }
+    }
+
+    &__content {
+        max-width: 600px;
+
+        @media (max-width: $laptop-size) {
+            max-width: 490px;
+        }
+
+        @media (max-width: 955.98px) {
+            max-width: 100%;
+        }
+    }
+
+    &__title {
+        color: $color-white;
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 58px;
+        letter-spacing: 0px;
+        margin-bottom: 20px;
+
+        
+        @media (max-width: $laptop-size) {
+            font-size: clamp(1.75rem, 1.557rem + 0.79vw, 2.25rem);
+            margin-bottom: 16px;
+        }
+    }
+
+    &__subtitle {
+        color: $grey-light3;
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: -0.6%;
+
+        @media (max-width: $laptop-size) {
+            font-size: clamp(0.875rem, 0.827rem + 0.2vw, 1rem);
+        }
+    }
+
+    &__image {
+        @media (max-width: 955.98px) {
+            width: 100%;
+        }
+    }
+
+    &__img {
+        border-radius: clamp(0.75rem, 0.653rem + 0.4vw, 1rem);
+        border: 1px solid $grey-dark2;
+
+        @media (max-width: 955.98px) {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}

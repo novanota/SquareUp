@@ -1,0 +1,58 @@
+.header {
+    border-bottom: 1px solid rgb(38, 38, 38);
+    padding: 21px 0;
+
+	@media (max-width: 817.98px) {
+		padding: 32px 0 21px 0;
+	}
+
+    &__row {
+        display: flex;
+        align-items: center;
+		justify-content: space-between;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+	&__nav {
+		@media (max-width: 817.98px) {
+			display: none;
+		}
+	}
+
+    &__link {
+		padding: 14px 28px;
+		border-radius: 8px;
+        color: $grey-light3;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 150%;
+		transition: all .3s ease;
+
+		&:hover {
+			color: $color-white;
+			background: $grey-dark2;
+		}
+
+		@media (max-width: $laptop-size) {
+			padding: 12px 22px;
+			font-size: 14px;
+		}
+    }
+
+	&__btn {
+		padding: 16px 24px;
+
+		@media (max-width: $laptop-size) {
+			padding: 12px 18px;
+			font-size: 14px;
+		}
+
+		@media (max-width: 817.98px) {
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,153 @@
+.home {
+    &__container {
+        @media (max-width: 700.98px) {
+            background: url(../img/background.png);
+        }
+
+        @media (max-width: 700.98px) {
+            border-bottom: 1px solid $grey-dark2;
+        }
+    }
+
+    &__wrapper {
+        background: url(../img/background.png);
+
+        @media (max-width: 700.98px) {
+            background: none;
+        }
+    }
+
+    &__inner {
+        padding-top: 112px;
+        padding-bottom: 274px;
+        border: 1px solid $grey-dark2;
+
+        background: url(../img/home/abstarct-img.png) no-repeat;
+        background-position: bottom;
+
+        @media (max-width: $laptop-size) {
+            padding-top: clamp(5rem, 4.228rem + 3.17vw, 7rem);
+            padding-bottom: clamp(12.813rem, 11.147rem + 6.83vw, 17.125rem);
+        }
+
+        @media (max-width: 700.98px) {
+            border: none;
+            
+        }
+    }
+
+    &__title {
+        max-width: 720px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 68px;
+        font-weight: 600;
+        line-height: 82px;
+        letter-spacing: 0%;
+
+        @media (max-width: $laptop-size) {
+            max-width: 520px;
+            font-size: clamp(2.125rem, 1.787rem + 1.39vw, 3rem);
+            line-height: clamp(2.563rem, 2.152rem + 1.68vw, 3.625rem);
+            margin-bottom: 30px;
+        }
+    }
+
+    &__labels {
+        margin: 0 auto;
+        max-width: fit-content;
+        padding: 36px 40px;
+        text-align: center;
+        margin-bottom: 50px;
+
+        border: 1px solid rgb(38, 38, 38);
+        border-radius: 12px;
+        backdrop-filter: blur(12px);
+        background: rgba(36, 36, 36, 0.2);
+
+        @media (max-width: $laptop-size) {
+            padding: clamp(1.125rem, 0.932rem + 0.79vw, 1.625rem)
+                clamp(1.25rem, 1.009rem + 0.99vw, 1.875rem);
+        }
+    }
+
+    &__label {
+        color: $grey-light1;
+        font-size: 22px;
+        line-height: 26px;
+        letter-spacing: 0%;
+
+        &--accent {
+            padding: 12px 14px;
+            color: $color-white;
+            background: $grey-dark2;
+            border-radius: 8px;
+            text-transform: capitalize;
+
+            @media (max-width: $laptop-size) {
+                padding: 8px 10px;
+                border-radius: 6px;
+            }
+
+            @media (max-width: 700.98px) {
+                padding: 0;
+                color: $grey-light1;
+                background: none;
+                text-transform: lowercase;
+                font-size: 16px;
+                line-height: 150%;
+            }
+        }
+
+        @media (max-width: $laptop-size) {
+            font-size: 18px;
+        }
+    }
+
+    &__btns {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 13px;
+    }
+
+    &__btn {
+        padding: 18px 28px;
+        border-radius: 10px;
+
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: 0%;
+
+        &--dark {
+            color: $color-white;
+            border: 1px solid #333333;
+            border-radius: 8px;
+            backdrop-filter: blur(12px);
+            background: #2424247a;
+
+            transition: all .3s ease;
+
+            &:hover {
+                background: #242424;
+            }
+        }
+
+        &--green {
+            color: $grey-dark2;
+            background: $green-primary;
+            transition: all .3s ease;
+
+            &:hover {
+                background: #9dff00c5;
+            }
+        }
+
+        @media (max-width: $laptop-size) {
+            padding: 14px 20px;
+            font-size: 14px;
+        }
+    }
+}

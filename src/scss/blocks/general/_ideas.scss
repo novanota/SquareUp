@@ -1,0 +1,74 @@
+.ideas {
+    &__heading {
+        padding: 120px 15px;
+        text-align: center;
+        background: url(../img/ideas/ideas-bg.png)
+            no-repeat;
+        background-size: cover;
+        background-position: center;
+        border: 1px solid $grey-dark2;
+
+        @media (max-width: $laptop-size) {
+            padding: clamp(3.125rem, 1.918rem + 4.95vw, 6.25rem) 15px;
+        }
+    }
+
+    &__logo {
+        max-width: 80px;
+        max-height: 80px;
+        margin-bottom: 50px;
+
+        & img {
+            max-width: 80px;
+            max-height: 80px;  
+        }
+
+        @media (max-width: $laptop-size) {
+            max-width: 60px;
+            max-height: 60px;
+            margin-bottom: clamp(1.75rem, 1.46rem + 1.19vw, 2.5rem);
+        }
+
+        @media (max-width: $mobile-size) {
+            max-width: 50px;
+            max-height: 50px;
+        }
+    }
+
+    &__title {
+        font-size: clamp(1.5rem, 1.162rem + 1.39vw, 2.375rem);
+        font-weight: 600;
+        line-height: clamp(1.813rem, 1.402rem + 1.68vw, 2.875rem);
+        letter-spacing: 0px;
+        margin-bottom: 14px;
+
+        @media (max-width: $laptop-size) {
+            margin-bottom: clamp(0.375rem, 0.278rem + 0.4vw, 0.625rem);
+        }
+    }
+
+    &__subtitle {
+        max-width: 900px;
+        margin: 0 auto;
+        color: $grey-light3;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: -0.108px;
+
+        @media (max-width: $laptop-size) {
+            max-width: 790px;
+            font-size: clamp(0.875rem, 0.827rem + 0.2vw, 1rem);
+        }
+    }
+
+
+    &__btn {
+        margin-top: 50px;
+        padding: 18px 34px;
+
+        @media (max-width: $laptop-size) {
+            margin-top: clamp(1.75rem, 1.46rem + 1.19vw, 2.5rem);
+            padding: 14px 24px;
+        }
+    }
+}
